@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "behavioral_validation": "NOT_RUN",
+  "skills": [
+    {"name": "appops-start", "path": ".agents/skills/appops-start/SKILL.md"},
+    {"name": "appops-design", "path": ".agents/skills/appops-design/SKILL.md"},
+    {"name": "appops-tdd", "path": ".agents/skills/appops-tdd/SKILL.md"},
+    {"name": "appops-knowledge", "path": ".agents/skills/appops-knowledge/SKILL.md"},
+    {"name": "appops-workflows", "path": ".agents/skills/appops-workflows/SKILL.md"},
+    {"name": "appops-connectors", "path": ".agents/skills/appops-connectors/SKILL.md"},
+    {"name": "appops-security", "path": ".agents/skills/appops-security/SKILL.md"},
+    {"name": "appops-observability", "path": ".agents/skills/appops-observability/SKILL.md"},
+    {"name": "appops-console", "path": ".agents/skills/appops-console/SKILL.md"},
+    {"name": "appops-debugging", "path": ".agents/skills/appops-debugging/SKILL.md"},
+    {"name": "appops-verification", "path": ".agents/skills/appops-verification/SKILL.md"},
+    {"name": "appops-review", "path": ".agents/skills/appops-review/SKILL.md"}
+  ]
+}

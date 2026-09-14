@@ -1,0 +1,31 @@
+name: Documentation checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  docs:
+    name: docs
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          fetch-depth: 2
+      - name: Test documentation validator
+        run: python3 -m unittest discover -s tests/docs -v
+      - name: Validate documentation and skill inventory
+        run: python3 scripts/check_docs.py
+      - name: Check diff whitespace
+        run: git diff --check HEAD^ HEAD
