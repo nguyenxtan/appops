@@ -14,6 +14,7 @@ Architecture baseline: **2026-09-14, v1**. The owner delegated technology and ar
 - [Module boundaries and target repository tree](architecture/module-boundaries.md)
 - [Relational data model](architecture/data-model.md)
 - [Knowledge ingestion, retrieval, and screenshot provenance](architecture/knowledge.md)
+- [Isolated document-worker contract](architecture/document-worker-contract.md)
 - [Case lifecycle and durable ticket workflows](architecture/case-workflows.md)
 - [Integration contracts and provider behavior](architecture/integrations.md)
 - [Authorization, approvals, privacy, and threat model](architecture/security.md)
